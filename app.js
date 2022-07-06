@@ -1,4 +1,10 @@
 let score = 0;
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(button => button.addEventListener('click', () => {
+    console.log(playRound(button.id))
+}));
+
 
 function computerPlay () {
     choise = Math.floor(Math.random()*3)
@@ -10,9 +16,9 @@ function computerPlay () {
         return "SCISSORS"
     }
 }
- function playRound (playerSelection, computerSelection) {
-     computerSelection = computerPlay().toLowerCase();
-     playerSelection = prompt("Select your play").toLowerCase();
+ function playRound (playerSelection) {
+     const computerSelection = computerPlay().toLowerCase();
+     playerSelection = playerSelection.toLowerCase();
      if (playerSelection === computerSelection) {
          return "it's a tie!";
      } else if (
@@ -32,6 +38,8 @@ function computerPlay () {
      }
  }
 
+
+ /*
 function game () {
     for (i=0; i<5; i++) {
         console.log(playRound());
@@ -47,3 +55,5 @@ function game () {
 }
 
 game();
+*/
+
