@@ -90,25 +90,25 @@ button {
 
 
 .neon-green, #rock:hover > i{
-  color: #fff;
+  color: #fff !important;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa, 0 0 92px #0fa;
 }
 
 .neon-blue, #paper:hover > i {
-  color: #fff;
+  color: #fff !important;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff,
     0 0 82px #5271ff, 0 0 92px #5271ff;
 }
 
 .neon-red, #scissors:hover > i {
-  color: #fff;
+  color: #fff !important;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09,
     0 0 82px #f09, 0 0 92px #f09;
 }
 
-#rock:hover {
-  border-color: #fff;
+#rock:hover, .neon-green-box {
+  border-color: #fff !important;
   box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa, 0 0 92px #0fa;
 }
@@ -123,8 +123,8 @@ button {
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
 }
 
-#paper:hover {
-  border-color: #fff;
+#paper:hover, .neon-blue-box {
+  border-color: #fff !important;
   box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff,
     0 0 82px #5271ff, 0 0 92px #5271ff;
 }
@@ -139,8 +139,8 @@ button {
     0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
 }
 
-#scissors:hover {
-  border-color: #fff;
+#scissors:hover, .neon-red-box {
+  border-color: #fff !important;
   box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09,
     0 0 82px #f09, 0 0 92px #f09;
 }
