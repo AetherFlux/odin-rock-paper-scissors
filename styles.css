@@ -1,0 +1,156 @@
+body {
+  background-color: #2a2a2a;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://img.freepik.com/free-photo/empty-red-brick-wall_53876-31790.jpg?t=st=1657182579~exp=1657183179~hmac=290b3985374022e9629bc1026fa7e49a043fd93383a8af8e72a77ba1d387d41c&w=2000");
+  backdrop-filter: grayscale(100%) brightness(60%) contrast(70%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.la-10x {
+  font-size: 200px;
+}
+
+.buttons, .computer {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+button {
+  background-color: transparent;
+  border: 10px solid black;
+  border-radius: 15%;
+  height: fit-content;
+  width: fit-content;
+}
+
+.computer > span {
+  display: inline-block;
+  border: 10px solid black;
+  border-radius: 15%;
+  height: fit-content;
+  width: fit-content;
+  padding: 1px 6px;
+}
+
+.wins {
+    display: flex;
+    gap: 4em;
+}
+
+.result-display {
+    margin: 0.2em 0.2em;
+    display: flex;
+    gap: 2em;
+}
+
+.count, .result-display {
+    font-family: "Yellowtail", cursive;
+    font-size: 5em;
+}
+
+.title > span {
+  font-family: "Yellowtail", cursive;
+  font-size: 7em;
+}
+
+.flicker-fast{
+    animation: flicker 3s linear infinite;
+  }
+
+.flicker-medium {
+    animation: flicker 7s linear infinite;
+}
+
+.flicker-slow{
+    animation: flicker 12s linear infinite;
+}
+
+@keyframes flicker {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+		
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+	}
+}
+
+
+.neon-green, #rock:hover > i{
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa;
+}
+
+.neon-blue, #paper:hover > i {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff,
+    0 0 82px #5271ff, 0 0 92px #5271ff;
+}
+
+.neon-red, #scissors:hover > i {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09,
+    0 0 82px #f09, 0 0 92px #f09;
+}
+
+#rock:hover {
+  border-color: #fff;
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa;
+}
+
+#rock:active {
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+#rock:active > i {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+#paper:hover {
+  border-color: #fff;
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff,
+    0 0 82px #5271ff, 0 0 92px #5271ff;
+}
+
+#paper:active {
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff,
+    0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
+}
+
+#paper:active > i {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff,
+    0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
+}
+
+#scissors:hover {
+  border-color: #fff;
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09,
+    0 0 82px #f09, 0 0 92px #f09;
+}
+
+#scissors:active {
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09,
+    0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
+}
+
+#scissors:active > i {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09,
+    0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
+}
